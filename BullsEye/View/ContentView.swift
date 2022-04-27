@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var alertVisible:Bool = false
-    @State private var sliderContant: Double = 50.0
+    @State private var alertVisible = false
+    @State private var sliderContant = 50.0
     
     //new instance of Game struct
-    @State private var game: Game = Game()
+    @State private var game = Game()
     
     var body: some View {
         VStack{

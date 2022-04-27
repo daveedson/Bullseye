@@ -9,16 +9,16 @@ import Foundation
 
 
 struct Game{
-    var target:Int = Int.random(in: 1...100)
-    var score:Int = 0
-    var round:Int = 1
+    var target = Int.random(in: 1...100)
+    var score = 0
+    var round = 1
     
     
     
     
     func points(sliderVlaue:Int)->Int{
-        let difference:Int = abs(self.target - sliderVlaue)
-        let awardedPoints : Int = 100 - difference
+        let difference = abs(self.target - sliderVlaue)
+        let awardedPoints  = 100 - difference
         return awardedPoints
     }
 }
