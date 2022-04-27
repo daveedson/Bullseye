@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B5BEE9C2818E77D008A35D2 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5BEE9B2818E77C008A35D2 /* Game.swift */; };
 		4BF6AC532815241100820DB9 /* BullsEyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF6AC522815241100820DB9 /* BullsEyeApp.swift */; };
 		4BF6AC552815241100820DB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF6AC542815241100820DB9 /* ContentView.swift */; };
 		4BF6AC572815241600820DB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF6AC562815241600820DB9 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B5BEE9B2818E77C008A35D2 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		4BF6AC4F2815241100820DB9 /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF6AC522815241100820DB9 /* BullsEyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeApp.swift; sourceTree = "<group>"; };
 		4BF6AC542815241100820DB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,11 +35,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B5BEE932818E427008A35D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B5BEE9B2818E77C008A35D2 /* Game.swift */,
+			);
+			name = Model;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		4B5BEE942818E46A008A35D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BF6AC542815241100820DB9 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B5BEE952818E4BE008A35D2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4BF6AC522815241100820DB9 /* BullsEyeApp.swift */,
+				4BF6AC562815241600820DB9 /* Assets.xcassets */,
+				4BF6AC5B2815241600820DB9 /* Info.plist */,
+				4BF6AC582815241600820DB9 /* Preview Content */,
+				4BF6AC502815241100820DB9 /* Products */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		4BF6AC462815241100820DB9 = {
 			isa = PBXGroup;
 			children = (
 				4BF6AC512815241100820DB9 /* BullsEye */,
-				4BF6AC502815241100820DB9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,16 +77,15 @@
 				4BF6AC4F2815241100820DB9 /* BullsEye.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		4BF6AC512815241100820DB9 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
-				4BF6AC522815241100820DB9 /* BullsEyeApp.swift */,
-				4BF6AC542815241100820DB9 /* ContentView.swift */,
-				4BF6AC562815241600820DB9 /* Assets.xcassets */,
-				4BF6AC5B2815241600820DB9 /* Info.plist */,
-				4BF6AC582815241600820DB9 /* Preview Content */,
+				4B5BEE952818E4BE008A35D2 /* App */,
+				4B5BEE942818E46A008A35D2 /* View */,
+				4B5BEE932818E427008A35D2 /* Model */,
 			);
 			path = BullsEye;
 			sourceTree = "<group>";
@@ -139,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BF6AC552815241100820DB9 /* ContentView.swift in Sources */,
+				4B5BEE9C2818E77D008A35D2 /* Game.swift in Sources */,
 				4BF6AC532815241100820DB9 /* BullsEyeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,10 +298,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"BullsEye/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BullsEye/App/Preview Content\"";
 				DEVELOPMENT_TEAM = 2Y93R6FJ4K;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = BullsEye/Info.plist;
+				INFOPLIST_FILE = BullsEye/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,10 +320,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"BullsEye/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BullsEye/App/Preview Content\"";
 				DEVELOPMENT_TEAM = 2Y93R6FJ4K;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = BullsEye/Info.plist;
+				INFOPLIST_FILE = BullsEye/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
