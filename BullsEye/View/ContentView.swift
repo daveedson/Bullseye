@@ -23,7 +23,6 @@ struct ContentView: View {
                 .fontWeight(.black)
     
             HStack {
-                
                 Text("1").bold()
                 Slider(value: self.$sliderContant,in:1.0...100)
                 Text("100").bold()
@@ -31,8 +30,7 @@ struct ContentView: View {
             Button(action: {
                 print("Hello swift ui")
                 self.alertVisible = true
-              
-                print(  self.game.points(sliderVlaue:Int(self.sliderContant)))
+               // self.game.points(sliderVlaue:Int(self.sliderContant))
             }) {
                 Text("Hit me")
             }
@@ -44,8 +42,7 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some
-        
+    static var previews: some View {
         ContentView()
         ContentView()
             .previewLayout(.fixed(width: 568, height: 329))
