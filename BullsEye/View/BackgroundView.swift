@@ -55,6 +55,7 @@ struct LabelTextView:View{
             Text("Score").font(.headline).kerning(2.0)
             Spacer()
             Text("Round").font(.headline).kerning(2.0)
+                .padding(EdgeInsets().bottom)
         }
     }
 }
@@ -63,7 +64,7 @@ struct BottomView: View {
     @Binding var game:Game
     
     var body: some View {
-        VStack {
+        VStack(spacing: 10.0) {
             LabelTextView()
             NumberView(text: String(game.round), score: String(game.score))
         }
