@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4B452ADB281E02100058B092 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B452ADA281E02100058B092 /* TextView.swift */; };
+		4B452ADF281E12230058B092 /* RoundedViewStroked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B452ADE281E12230058B092 /* RoundedViewStroked.swift */; };
+		4B452AE52820AE4B0058B092 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B452AE42820AE4B0058B092 /* BackgroundView.swift */; };
 		4B4F5DE82818FECC00988F3B /* BullsEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F5DE72818FECC00988F3B /* BullsEyeTests.swift */; };
 		4B5BEE9C2818E77D008A35D2 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5BEE9B2818E77C008A35D2 /* Game.swift */; };
 		4BF6AC532815241100820DB9 /* BullsEyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF6AC522815241100820DB9 /* BullsEyeApp.swift */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		4B452ADA281E02100058B092 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		4B452ADE281E12230058B092 /* RoundedViewStroked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViewStroked.swift; sourceTree = "<group>"; };
+		4B452AE42820AE4B0058B092 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		4B4F5DE52818FECC00988F3B /* BullsEyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullsEyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B4F5DE72818FECC00988F3B /* BullsEyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeTests.swift; sourceTree = "<group>"; };
 		4B4F5DE92818FECC00988F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 			children = (
 				4BF6AC542815241100820DB9 /* ContentView.swift */,
 				4B452ADA281E02100058B092 /* TextView.swift */,
+				4B452ADE281E12230058B092 /* RoundedViewStroked.swift */,
+				4B452AE42820AE4B0058B092 /* BackgroundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -240,8 +246,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B452AE52820AE4B0058B092 /* BackgroundView.swift in Sources */,
 				4BF6AC552815241100820DB9 /* ContentView.swift in Sources */,
 				4B452ADB281E02100058B092 /* TextView.swift in Sources */,
+				4B452ADF281E12230058B092 /* RoundedViewStroked.swift in Sources */,
 				4B5BEE9C2818E77D008A35D2 /* Game.swift in Sources */,
 				4BF6AC532815241100820DB9 /* BullsEyeApp.swift in Sources */,
 			);

@@ -19,11 +19,11 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            Color("BackgroundColor")
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        BackgroundView(game: $game)
             VStack{
-                InstructionText(text:   "🎯🎯🎯\nPUT THE BULLSEYE AS CLOSE AS YOU CAN TO").padding(.leading,30.0)
-                padding(.trailing,30.0)
+                InstructionText(text:   "🎯🎯🎯\nPUT THE BULLSEYE AS CLOSE AS YOU CAN TO")
+//                    .padding(.leading,30.0)
+//                padding(.trailing,30.0)
                 
                 HStack {
                     Text("1").bold().foregroundColor(Color("textColor"))
@@ -33,7 +33,7 @@ struct ContentView: View {
                 }
                 .padding()
                 Button(action: {
-                    print("Hello swift ui")
+                    print("Hello swift ui")  
                     self.alertVisible = true
                     // self.game.points(sliderVlaue:Int(self.sliderContant))
                 }) {
@@ -48,6 +48,7 @@ struct ContentView: View {
                 })
                 .foregroundColor(Color.white)
                 .cornerRadius(21.0)
+                .overlay(RoundedRectangle(cornerRadius: 21.0).strokeBorder(Color.white,lineWidth: 2.0))
                 
                 .alert(isPresented: $alertVisible, content: {
                     return Alert(title: Text("Hello There"), message: Text("The Sliders value is \(Int(self.sliderContant))"), dismissButton: .default(Text("Awesome")))
